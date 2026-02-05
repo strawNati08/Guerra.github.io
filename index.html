@@ -2,68 +2,117 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Escritos casi poéticos</title>
+  <title>Nadaísmos de bajo presupuesto</title>
   <style>
     body {
+      background-color: #0a0a0a;
+      color: #eaeaea;
+      font-family: "Times New Roman", Times, serif;
       margin: 0;
-      padding: 0;
-      background: #0b0b0b;
-      color: #e6e6e6;
-      font-family: "Georgia", serif;
-      display: flex;
-      justify-content: center;
+      padding: 20px;
     }
 
-    .contenedor {
-      max-width: 700px;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-weight: normal;
-      letter-spacing: 2px;
+    .portada-titulo {
       text-align: center;
       margin-bottom: 40px;
     }
 
-    .poema {
-      margin-bottom: 50px;
-      line-height: 1.8;
-      opacity: 0.9;
+    .portada-titulo h1 {
+      font-size: 3em;
+      color: #8b0000;
+      margin: 0;
     }
 
-    .fecha {
-      font-size: 0.8em;
-      opacity: 0.5;
-      margin-bottom: 10px;
+    .portada-titulo h2 {
+      font-size: 1.5em;
+      color: #a33;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+
+    .grid {
+      column-count: 2;
+      column-gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        column-count: 1;
+      }
+    }
+
+    .card {
+      background-color: #111;
+      display: inline-block;
+      margin: 0 0 20px;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #000;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px #8b0000;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card h3 {
+      text-align: center;
+      margin: 10px 0;
+      color: #8b0000;
+    }
+
+    .card p {
+      padding: 0 10px 10px;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    .card a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      color: #eaeaea;
+      text-decoration: none;
+      border-top: 1px solid #333;
+      transition: background-color 0.3s;
+    }
+
+    .card a:hover {
+      background-color: #330000;
     }
   </style>
 </head>
-
 <body>
-  <div class="contenedor">
-    <h1>Escritos casi poéticos</h1>
 
-    <div class="poema">
-      <div class="fecha">Febrero 2026</div>
-      <p>
-        Escribo como quien no sabe<br>
-        si está pidiendo auxilio<br>
-        o dejando constancia.
-      </p>
-    </div>
-
-    <div class="poema">
-      <div class="fecha">—</div>
-      <p>
-        intentos de resignificar un lenguaje. <br>
-        atado a un sujeto que por costumbre,
-        lo ha dejado en los confines de la entropia.
-      </p>
-    </div>
-  
+  <div class="portada-titulo">
+    <h1>Nadaísmos de bajo presupuesto</h1>
+    <h2>Fragmentos, poemas y entropías góticas</h2>
   </div>
-  <a href="escritos.html">nadaísmos de bajo costo</a>
-</body>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="noche.jpg" alt="noche">
+      <h3>Primer nadaísmo</h3>
+      <p>Fragmento: ¿Qué propósito hay? Algún día lo sabré… Algún día; mañana, hoy en esta noche…</p>
+      <a href="escritos.html#primer">Leer más</a>
+    </div>
+
+    <div class="card">
+      <img src="palmeras.jpg" alt="palmeras">
+      <h3>Segundo nadaísmo</h3>
+      <p>Fragmento: Estuve en un lugar en donde solo fui carne y huesos; un lugar tangible…</p>
+      <a href="escritos.html#segundo">Leer más</a>
+    </div>
+
+  </div>
+
 </body>
   </html>
