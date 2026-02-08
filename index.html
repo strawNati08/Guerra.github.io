@@ -3,36 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>Nadaísmos de bajo presupuesto</title>
+
+  <!-- Fuentes góticas -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
   <style>
     body {
       background-color: #0a0a0a;
       color: #eaeaea;
-      font-family: "Times New Roman", Times, serif;
       margin: 0;
-      padding: 20px;
+      padding: 30px;
+      font-family: "IM Fell English SC", serif;
     }
 
     .portada-titulo {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
 
     .portada-titulo h1 {
-      font-size: 3em;
-      color: #8b0000;
+      font-family: "UnifrakturCook", cursive;
+      font-size: 4.5em;
+      color: #7b0f0f; /* rojo vino opaco */
       margin: 0;
+      letter-spacing: 2px;
     }
 
     .portada-titulo h2 {
-      font-size: 1.5em;
-      color: #a33;
+      font-size: 1.6em;
+      color: #b07a7a;
+      margin-top: 15px;
       font-weight: normal;
-      margin-top: 10px;
     }
 
     .grid {
       column-count: 2;
-      column-gap: 20px;
+      column-gap: 25px;
     }
 
     @media (max-width: 768px) {
@@ -44,48 +50,55 @@
     .card {
       background-color: #111;
       display: inline-block;
-      margin: 0 0 20px;
+      margin: 0 0 25px;
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 0 15px #000;
+      box-shadow: 0 0 20px #000;
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px #8b0000;
+      transform: translateY(-6px);
+      box-shadow: 0 0 35px #7b0f0f;
     }
 
     .card img {
       width: 100%;
       display: block;
+      filter: brightness(0.85) contrast(1.05);
     }
 
     .card h3 {
       text-align: center;
-      margin: 10px 0;
-      color: #8b0000;
+      margin: 15px 10px 10px;
+      font-family: "UnifrakturCook", cursive;
+      font-size: 2.1em;
+      color: #7b0f0f;
+      letter-spacing: 1px;
     }
 
     .card p {
-      padding: 0 10px 10px;
-      line-height: 1.5;
-      color: #ccc;
+      padding: 0 15px 15px;
+      line-height: 1.6;
+      color: #cfcfcf;
+      font-size: 1em;
     }
 
     .card a {
       display: block;
       text-align: center;
-      padding: 10px;
+      padding: 12px;
       color: #eaeaea;
       text-decoration: none;
       border-top: 1px solid #333;
-      transition: background-color 0.3s;
+      font-size: 1em;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     .card a:hover {
       background-color: #330000;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -93,31 +106,36 @@
 
   <div class="portada-titulo">
     <h1>Nadaísmos de bajo presupuesto</h1>
-    <h2>mi ahogo entre la web</h2>
+    <h2>Fragmentos, cuerpos y entropías</h2>
   </div>
 
   <div class="grid">
 
+    <!-- Primer poema -->
     <div class="card">
-      <img src="Noche.jpg" alt="noche">
-      <h3>*</h3>
-      <p>Fragmento: ¿Qué propósito hay? Algún día lo sabré… Algún día; mañana, hoy en esta noche…</p>
-      <a href="escritos.html#primer">Leer más</a>
+      <img src="noche.jpg" alt="noche">
+      <h3>Primer nadaísmo</h3>
+      <p>¿Qué propósito hay? Algún día lo sabré… Algún día; mañana, hoy en esta noche, o quizá en los más absurdos sueños de no ver más la luz…</p>
+      <a href="escritos.html#primer">Leer</a>
     </div>
 
+    <!-- Segundo poema -->
     <div class="card">
-      <img src="Palmeras.jpg" alt="palmeras">
-      <h3>Neguentropía</h3>
-      <p>Fragmento: Estuve en un lugar en donde solo fui carne y huesos; un lugar tangible…</p>
-      <a href="escritos.html#segundo">Leer más</a>
+      <img src="palmeras.jpg" alt="palmeras">
+      <h3>Segundo nadaísmo</h3>
+      <p>Estuve en un lugar en donde solo fui carne y huesos; un lugar tangible, en donde el alma solo se reflejaba en los movimientos corporales…</p>
+      <a href="escritos.html#segundo">Leer</a>
     </div>
 
-  <div class="card">
-  <img src="Llama.jpg" alt="Llama">
-  <h3>2025</h3>
-  <p>Fragmento: Me siento pequeña, vulnerable a todo... Como puedo sentirme sofocada...</p>
-  <a href="escritos.html#tercer">Leer más</a>
+    <!-- Tercer poema -->
+    <div class="card">
+      <img src="Llama.jpg" alt="Llama">
+      <h3>Tercer nadaísmo</h3>
+      <p>Me siento pequeña, vulnerable a todo… Cómo puedo sentirme sofocada en mi propia piel, me estoy ahogando con mi sangre…</p>
+      <a href="escritos.html#tercer">Leer</a>
+    </div>
+
   </div>
 
 </body>
-  </html>
+</html>
